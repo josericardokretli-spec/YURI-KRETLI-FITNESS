@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Yuri Kretli | Personal Trainer em Teixeira de Freitas</title>
+<meta name="description" content="Personal Trainer Yuri Kretli. Transforme seu corpo em 90 dias com treino personalizado e acompanhamento profissional.">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0a0a0a;
+  color: white;
+}
+
+/* NAV */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 8%;
+  position: fixed;
+  width: 100%;
+  background: rgba(0,0,0,0.7);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+nav h1 {
+  color: #f7b500;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+  font-size: 14px;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)), url('yuri.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  padding: 0 8%;
+}
+
+.hero-text h2 {
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.hero-text span {
+  color: #f7b500;
+}
+
+.hero-text p {
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 14px 30px;
+  background: #f7b500;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* SECTION */
+.section {
+  padding: 80px 8%;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* CARDS */
+.cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background: #111;
+  padding: 25px;
+  border-radius: 15px;
+  width: 260px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  background: #f7b500;
+  color: black;
+}
+
+/* RESULTADOS */
+.results {
+  background: #111;
+}
+
+.result {
+  background: black;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px;
+  display: inline-block;
+}
+
+/* CTA */
+.cta {
+  background: #f7b500;
+  color: black;
+  padding: 60px 8%;
+  text-align: center;
+}
+
+.cta a {
+  display: inline-block;
+  margin-top: 20px;
+  background: black;
+  color: white;
+  padding: 14px 30px;
+  text-decoration: none;
+  border-radius: 30px;
+}
+
+/* INSTAGRAM */
+.instagram {
+  text-align: center;
+  padding: 60px 8%;
+}
+
+/* WHATSAPP */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  .hero-text h2 {
+    font-size: 28px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <h1>Yuri Kretli</h1>
+  <div>
+    <a href="#sobre">Sobre</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#resultados">Resultados</a>
+    <a href="#contato">Contato</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-text">
+    <h2>Transforme seu corpo em <span>90 dias</span></h2>
+    <p>Treino + acompanhamento + estratégia eficiente</p>
+    <a href="https://wa.me/553398670196?text=Fala Yuri, vim pelo site e quero começar meu treino" class="btn">
+      COMEÇAR AGORA
+    </a>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Para quem é esse treino?</h2>
+  <div class="cards">
+    <div class="card">❌ Sem resultado</div>
+    <div class="card">🔥 Quer emagrecer</div>
+    <div class="card">💪 Ganhar massa</div>
+    <div class="card">⚡ Precisa de disciplina</div>
+  </div>
+</section>
+
+<section id="sobre" class="section">
+  <h2>Sobre Mim</h2>
+  <p>Personal Trainer especializado em transformação física e resultados reais.</p>
+</section>
+
+<section id="servicos" class="section">
+  <h2>Serviços</h2>
+  <div class="cards">
+    <div class="card">Treino Personalizado</div>
+    <div class="card">Consultoria Online</div>
+    <div class="card">Emagrecimento</div>
+  </div>
+</section>
+
+<section id="resultados" class="section results">
+  <h2>Resultados</h2>
+  <div class="result">-10kg em 3 meses</div>
+  <div class="result">+6kg massa muscular</div>
+</section>
+
+<section class="instagram">
+  <h2>Instagram</h2>
+  <p>@yurikretli</p>
+</section>
+
+<section id="contato" class="cta">
+  <h2>Comece agora</h2>
+  <a href="https://wa.me/553398670196?text=Fala Yuri, vim pelo site e quero começar meu treino">
+    WhatsApp
+  </a>
+</section>
+
+<a class="whatsapp" href="https://wa.me/553398670196?text=Fala Yuri, vim pelo site e quero começar meu treino">💬</a>
+
+</body>
+</html>
